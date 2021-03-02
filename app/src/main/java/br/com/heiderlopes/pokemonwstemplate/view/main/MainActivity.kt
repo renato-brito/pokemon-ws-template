@@ -14,16 +14,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        btPokedex.setOnClickListener {
-            startActivity(Intent(this, ScanActivity::class.java))
-        }
 
-        btPokemonList.setOnClickListener {
-            startActivity(Intent(this, ListPokemonsActivity::class.java))
-        }
-
-        btClose.setOnClickListener {
-            finish()
-        }
     }
 }
