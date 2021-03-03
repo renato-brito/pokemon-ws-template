@@ -4,10 +4,7 @@ import br.com.heiderlopes.pokemonwstemplate.model.HealthResponse
 import br.com.heiderlopes.pokemonwstemplate.model.Pokemon
 import br.com.heiderlopes.pokemonwstemplate.model.PokemonResponse
 import retrofit2.Call
-import retrofit2.http.Body
-import retrofit2.http.GET
-import retrofit2.http.PUT
-import retrofit2.http.Query
+import retrofit2.http.*
 
 interface PokemonService {
 
@@ -23,5 +20,10 @@ interface PokemonService {
     @PUT("/api/pokemon")
     fun updatePokemon(
         @Body pokemon: Pokemon
+    ) : Call<Pokemon>
+
+    @GET("/api/pokemon/{number}")
+    fun getPokemon(
+        @Path("number") number: String
     ) : Call<Pokemon>
 }
