@@ -1,14 +1,13 @@
 package br.com.heiderlopes.pokemonwstemplate.view.splash
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import br.com.heiderlopes.pokemonwstemplate.R
 import br.com.heiderlopes.pokemonwstemplate.view.main.MainActivity
 import org.koin.android.ext.android.inject
-import org.koin.android.viewmodel.ext.android.viewModel
 
 class SplashActivity : AppCompatActivity() {
 
